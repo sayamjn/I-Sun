@@ -39,141 +39,162 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ slug }) => {
     if (liveUrl) {
       window.open(liveUrl, "_blank");
     } else {
-      alert("Live stream URL is not available.");
+      alert("Live monitoring dashboard is not available.");
     }
   };
 
   const services = [
     {
-      slug: 'pre-wedding-photography',
-      title: 'Pre-Wedding Photography',
-      image: '/images/Pre-Wedding Photography.webp',
+      slug: 'solar-assessment',
+      title: 'AI-Powered Solar Assessment',
+      image: '/images/solar-assessment.webp',
       description:
-        'At Shiv Photography, we understand that your pre-wedding shoot sets the tone for your entire wedding journey. Our expert team specializes in creating magical pre-wedding moments that tell your unique love story.',
+        'At I-Sun Synergy, we understand that the first step in your solar journey is understanding the true potential of your property. Our proprietary AI-powered assessment uses advanced satellite imagery, machine learning algorithms, and your historical energy consumption patterns to create a precise solar potential analysis.',
       details: [
-        'Customized pre-wedding themes',
-        'Outdoor and indoor shoots',
-        'Professional editing and retouching',
+        'Precise roof orientation and shading analysis',
+        'Weather pattern and regional solar irradiance calculation',
+        'Optimal system sizing recommendations',
+        'Accurate energy production estimates',
+        'Detailed cost savings projections',
+        'Environmental impact calculations',
+        'User-friendly interface for technical information',
       ],
       carouselImages: [
-        '/images/Pre-Wedding/Pre-Wedding-01.jpg',
-        '/images/Pre-Wedding/Pre-Wedding-02.jpg',
-        '/images/Pre-Wedding/Pre-Wedding-03.jpg',
-        '/images/Pre-Wedding/Pre-Wedding-04.jpg',
-        '/images/Pre-Wedding/Pre-Wedding-05.jpg',
-        '/images/Pre-Wedding/Pre-Wedding-06.jpg',
-        '/images/Pre-Wedding/Pre-Wedding-07.jpg',
+        '/images/Solar-Assessment/Assessment-01.jpg',
+        '/images/Solar-Assessment/Assessment-02.jpg',
+        '/images/Solar-Assessment/Assessment-03.jpg',
+        '/images/Solar-Assessment/Assessment-04.jpg',
+        '/images/Solar-Assessment/Assessment-05.jpg',
+        '/images/Solar-Assessment/Assessment-06.jpg',
+        '/images/Solar-Assessment/Assessment-07.jpg',
       ],
     },
     {
-      slug: 'wedding-photography',
-      title: 'Wedding Photography',
-      image: '/images/Wedding Photography.webp',
+      slug: 'solar-marketplace',
+      title: 'SolarConnect™ Marketplace',
+      image: '/images/solar-marketplace.webp',
       description:
-        'Your wedding day deserves nothing less than extraordinary documentation. Our experienced team combines traditional expertise with contemporary techniques to capture every meaningful moment of your special day.',
+        'Your path to solar adoption deserves complete transparency and choice. Our revolutionary SolarConnect™ marketplace transforms how Indians shop for solar solutions by creating a standardized, transparent platform where pre-verified vendors compete for your business.',
       details: [
-        'Full-day coverage',
-        'Candid and traditional shots',
-        'High-resolution images',
+        'Standardized quality metrics for easy comparison',
+        'Pre-verified vendor network',
+        'Dynamic bidding system for competitive pricing',
+        'Uniform technical specifications',
+        'Transparent pricing structures',
+        'Wide range of customizable options',
+        'Strict quality control standards',
       ],
       carouselImages: [
-        '/images/wedding/Wedding-01.jpg',
-        '/images/wedding/Wedding-02.jpg',
-        '/images/wedding/Wedding-03.jpg',
-        '/images/wedding/Wedding-04.jpg',
-        '/images/wedding/Wedding-05.jpg',
-        '/images/wedding/Wedding-06.jpg',
-        '/images/wedding/Wedding-07.jpg',
+        '/images/Marketplace/Marketplace-01.jpg',
+        '/images/Marketplace/Marketplace-02.jpg',
+        '/images/Marketplace/Marketplace-03.jpg',
+        '/images/Marketplace/Marketplace-04.jpg',
+        '/images/Marketplace/Marketplace-05.jpg',
+        '/images/Marketplace/Marketplace-06.jpg',
+        '/images/Marketplace/Marketplace-07.jpg',
       ],
     },
     {
-      slug: 'post-wedding-photography',
-      title: 'Post-Wedding Photography',
-      image: '/images/Post-Wedding Photography.webp',
+      slug: 'project-management',
+      title: 'End-to-End Project Management',
+      image: '/images/project-management.webp',
       description:
-        "Extend the magic of your wedding celebrations with our post-wedding photography services. Whether it's an intimate couple's session or a grand reception, we create stunning visual narratives that complement your wedding album.",
+        'We transform the traditionally complex solar installation process into a streamlined, stress-free experience. Our comprehensive digital project management system guides you from contract signing through installation and grid connection.',
       details: [
-        'Couple sessions',
-        'Reception coverage',
-        'Custom photo albums',
+        'Real-time project tracking via mobile app and web',
+        'Automated documentation system for paperwork',
+        'Quality assurance protocols',
+        'Milestone-based progress monitoring',
+        'Permit application support',
+        'Equipment delivery tracking',
+        'Personalized installation support',
       ],
       carouselImages: [
-        '/images/Post-Wedding/Post-Wedding-01.jpg',
-        '/images/Post-Wedding/Post-Wedding-02.jpg',
-        '/images/Post-Wedding/Post-Wedding-03.jpg',
-        '/images/Post-Wedding/Post-Wedding-04.jpg',
-        '/images/Post-Wedding/Post-Wedding-05.jpg',
-        '/images/Post-Wedding/Post-Wedding-06.jpg',
-        '/images/Post-Wedding/Post-Wedding-07.jpg',
+        '/images/Project-Management/Project-01.jpg',
+        '/images/Project-Management/Project-02.jpg',
+        '/images/Project-Management/Project-03.jpg',
+        '/images/Project-Management/Project-04.jpg',
+        '/images/Project-Management/Project-05.jpg',
+        '/images/Project-Management/Project-06.jpg',
+        '/images/Project-Management/Project-07.jpg',
       ],
     },
     {
-      slug: 'baptism-photography',
-      title: 'Baptism Photography',
-      image: '/images/Baptism Photography.webp',
+      slug: 'financing-solutions',
+      title: 'Integrated Financing Solutions',
+      image: '/images/financing-solutions.webp',
       description:
-        'We approach baptism photography with the reverence and sensitivity this sacred occasion deserves. Our experienced photographers understand the religious significance and cultural traditions involved.',
+        'We recognize that financial considerations are often the biggest hurdle to solar adoption. Our embedded fintech platform revolutionizes solar financing by providing instant access to a range of personalized payment options.',
       details: [
-        'Ceremony coverage',
-        'Family portraits',
-        'Customized packages',
+        'Multiple financing options (loans, leases, PPAs)',
+        'Transparent ROI calculations',
+        'Partnerships with leading financial institutions',
+        'Competitive interest rates',
+        'Flexible term options',
+        'Quick approval timelines',
+        'Paperless application process',
       ],
       carouselImages: [
-        '/images/Baptism/Baptism-01.webp',
-        '/images/Baptism/Baptism-02.webp',
-        '/images/Baptism/Baptism-03.webp',
-        '/images/Baptism/Baptism-04.webp',
-        '/images/Baptism/Baptism-05.webp',
-        '/images/Baptism/Baptism-06.webp',
-        '/images/Baptism/Baptism-07.webp',
+        '/images/Financing/Financing-01.jpg',
+        '/images/Financing/Financing-02.jpg',
+        '/images/Financing/Financing-03.jpg',
+        '/images/Financing/Financing-04.jpg',
+        '/images/Financing/Financing-05.jpg',
+        '/images/Financing/Financing-06.jpg',
+        '/images/Financing/Financing-07.jpg',
       ],
     },
     {
-      slug: 'funeral-service-coverage',
-      title: 'Funeral Service Coverage',
-      image: '/images/Funeral Service Photography.webp',
+      slug: 'performance-monitoring',
+      title: 'Performance Monitoring System',
+      image: '/images/performance-monitoring.webp',
       description:
-        'With utmost respect and discretion, we provide memorial photography services that help families preserve memories of their loved ones. Our experienced team understands the sensitive nature of these occasions.',
+        'Our relationship with customers extends well beyond installation. Our IoT-enabled performance monitoring system provides continuous, real-time visibility into your solar system\'s operation.',
       details: [
-        'Discreet coverage',
-        'Memorial slideshows',
-        'Customized packages',
+        'Real-time energy production tracking',
+        'Consumption pattern analysis',
+        'Financial savings monitoring',
+        'AI-powered predictive maintenance',
+        'System performance benchmarking',
+        'Proactive issue identification',
+        'Educational insights for optimization',
       ],
       carouselImages: [
-        '/images/Funeral Service/Funeral Service-01.jpg',
-        '/images/Funeral Service/Funeral Service-02.jpg',
-        '/images/Funeral Service/Funeral Service-03.jpg',
-        '/images/Funeral Service/Funeral Service-04.jpg',
-        '/images/Funeral Service/Funeral Service-05.jpg',
-        '/images/Funeral Service/Funeral Service-06.jpg',
-        '/images/Funeral Service/Funeral Service-07.jpg',
+        '/images/Monitoring/Monitoring-01.jpg',
+        '/images/Monitoring/Monitoring-02.jpg',
+        '/images/Monitoring/Monitoring-03.jpg',
+        '/images/Monitoring/Monitoring-04.jpg',
+        '/images/Monitoring/Monitoring-05.jpg',
+        '/images/Monitoring/Monitoring-06.jpg',
+        '/images/Monitoring/Monitoring-07.jpg',
       ],
     },
     {
-      slug: 'watch-live',
-      title: 'Watch live',
-      image: '/images/LIVE _20250307_125532_0000.webp',
+      slug: 'live-monitoring',
+      title: 'Live System Monitoring',
+      image: '/images/live-monitoring.webp',
       description:
-        'At Shiv Photography, we bring your special moments to the global stage through our professional live streaming services. Under the expert guidance of Shiv bhaiya, we utilize cutting-edge technology to broadcast your cherished events in real-time, allowing loved ones from across the world to participate virtually in your significant occasions. Our dedicated team ensures high-quality, uninterrupted streaming with professional-grade equipment and reliable connectivity solutions, delivering a seamless viewing experience that captures the emotion and atmosphere of your event.',
+        'At I-Sun Synergy, we bring transparency to your solar investment through our professional live monitoring dashboard. Our advanced monitoring system provides real-time performance data, energy production metrics, and system health indicators all in one unified interface. Our dedicated team ensures high-quality, uninterrupted data collection with professional-grade sensors and reliable connectivity solutions, delivering a seamless monitoring experience that captures the true value of your solar installation.',
       carouselImages: [
-        '/images/LIVE/Live-01.jpg',
-        '/images/LIVE/Live-02.jpg',
-        '/images/LIVE/Live-03.jpg',
-        '/images/LIVE/Live-04.jpg',
-        '/images/LIVE/Live-05.jpg',
-        '/images/LIVE/Live-06.jpg',
-        '/images/LIVE/Live-07.jpg',
+        '/images/Live-Monitoring/Live-01.jpg',
+        '/images/Live-Monitoring/Live-02.jpg',
+        '/images/Live-Monitoring/Live-03.jpg',
+        '/images/Live-Monitoring/Live-04.jpg',
+        '/images/Live-Monitoring/Live-05.jpg',
+        '/images/Live-Monitoring/Live-06.jpg',
+        '/images/Live-Monitoring/Live-07.jpg',
       ],
       keyServices: [ 
-        'Wedding Ceremonies - Share your sacred vows and celebrations with family and friends who cannot attend in person, complete with multiple camera angles and professional audio capture',
-        'Corporate Events & Conferences - Broadcast keynote speeches, product launches, and company milestones to stakeholders, clients, and team members worldwide',
-        'Religious Ceremonies - Enable distant relatives to participate in important religious events including baptisms, funerals, and other sacred traditions',
-        'Family Celebrations - Connect extended family across continents for birthdays, anniversaries, and reunion gatherings',
-        'Educational Sessions & Workshops - Facilitate knowledge sharing and learning experiences beyond geographical limitations',
-        'Cultural Performances - Showcase traditional arts, music, and dance performances to global audiences with high-fidelity audio and visual quality',
+        'Real-time Production Monitoring - Track your system\'s energy generation in real-time with minute-by-minute updates and visualization',
+        'Performance Analytics - Access detailed charts and graphs showing daily, weekly, monthly, and yearly production patterns',
+        'Financial Returns Dashboard - Monitor your investment returns, savings, and payback timeline with accurate financial metrics',
+        'Weather Integration - See how local weather conditions affect your system\'s performance with integrated weather data',
+        'Comparative Analysis - Benchmark your system against similar installations in your region to ensure optimal performance',
+        'Maintenance Alerts - Receive instant notifications about system issues or maintenance requirements',
+        'Mobile Accessibility - Monitor your system from anywhere using our mobile-optimized dashboard',
       ],
       equip: 
-        "Our live streaming packages include pre-event technical setup, multi-camera coverage, professional audio integration, custom branded overlays, and secure viewing links accessible from any device. With Shiv Photography's live streaming services, distance is no longer a barrier to sharing in life's most meaningful moments."
+        "Our live monitoring packages include high-precision sensors, reliable data transmission systems, secure cloud storage, customizable alert parameters, and user-friendly dashboards accessible from any device. With I-Sun Synergy's live monitoring services, you gain complete visibility into your solar investment's performance, ensuring maximum returns and system longevity."
     }
   ];
 
@@ -184,7 +205,7 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ slug }) => {
   }
 
   return (
-    <div className="bg-black text-[#E2A240] min-h-screen py-8 md:py-16 px-4 md:px-12">
+    <div className="bg-black text-[#4CAF50] min-h-screen py-8 md:py-16 px-4 md:px-12">
   <HeaderOnSlider />
   <div className="max-w-6xl mx-auto bg-gray-900 p-4 md:p-8 lg:p-16 rounded-lg shadow-lg">
     {/* Image and Title Section */}
@@ -198,19 +219,19 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ slug }) => {
         />
       </div>
       <div>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-cursive mb-4 text-[#E2A240]">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-cursive mb-4 text-[#4CAF50]">
           {service.title}
         </h2>
         <p className="text-base md:text-lg lg:text-xl text-white font-serif tracking-wide leading-relaxed">
           {service.description}
         </p>
-        {/* Add Watch Live Button */}
-        {slug === 'watch-live' && (
+        {/* Add Live Monitoring Button */}
+        {slug === 'live-monitoring' && (
           <button
             onClick={handleLive}
-            className="mt-4 md:mt-6 bg-yellow-500 text-black px-4 md:px-6 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition duration-300"
+            className="mt-4 md:mt-6 bg-green-500 text-black px-4 md:px-6 py-2 rounded-lg font-semibold hover:bg-green-400 transition duration-300"
           >
-            Watch Live
+            Access Live Dashboard
           </button>
         )}
       </div>
@@ -218,10 +239,10 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ slug }) => {
 
 
     {/* Key Services or Details Section */}
-    {slug === 'watch-live' ? (
+    {slug === 'live-monitoring' ? (
       <div className="mt-6 md:mt-10">
-        <h2 className="text-2xl md:text-3xl underline font-cursive mb-4 text-start text-[#E2A240]">
-          Key Live Streaming Services
+        <h2 className="text-2xl md:text-3xl underline font-cursive mb-4 text-start text-[#4CAF50]">
+          Key Monitoring Features
         </h2>
         <ul className="list-disc list-inside font-serif mb-8 md:mb-16 text-base md:text-lg lg:text-xl space-y-2 md:space-y-3 text-white">
           {service.keyServices?.map((service, index) => (
@@ -231,8 +252,8 @@ const ServiceDetail: React.FC<ServiceDetailProps> = ({ slug }) => {
       </div>
     ) : (
       <div className="mt-6 md:mt-8">
-        <h2 className="text-2xl md:text-3xl font-cursive mb-4 text-start text-[#E2A240]">
-          Details
+        <h2 className="text-2xl md:text-3xl font-cursive mb-4 text-start text-[#4CAF50]">
+          Service Features
         </h2>
         <ul className="list-disc list-inside font-serif text-base md:text-lg lg:text-xl space-y-2 md:space-y-3 text-white">
           {service.details?.map((detail, index) => (

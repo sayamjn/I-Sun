@@ -7,8 +7,8 @@ import Footer from './components/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Shiv Creations',
-  description: 'Professional photography services',
+  title: 'I-Sun',
+  description: 'Professional Solar services',
   icons: {
     icon: '/title_logo.png',
   },

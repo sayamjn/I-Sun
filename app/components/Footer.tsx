@@ -139,10 +139,10 @@ export default function Footer() {
               Email: contact@isunsynergy.com
             </p>
             <p className="mb-2 text-sm md:text-base">
-              Phone: +91 8871201243, +91 7987613175
+              Phone: +91 8989586714
             </p>
             <p className="mb-2 text-sm md:text-base">
-              Address: Bhopal, Madhya Pradesh, India
+              Address: Shop No.40-A, First Floor Maple High Street Narmadapuram Road Bhopal - 462026
             </p>
           </div>
         </div>

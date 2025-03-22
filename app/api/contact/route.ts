@@ -28,11 +28,11 @@ export async function POST(req: NextRequest) {
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: process.env.NEXT_PUBLIC_EMAIL_TO,
-      subject: "Photography Services Inquiry",
+      subject: "Solar Energy Services Inquiry",
       html: `
-    <p>Dear Photography Services Team,</p>
+    <p>Dear I-Sun Synergy Team,</p>
 
-    <p>You have received a new inquiry regarding your photography services. Here are the details:</p>
+    <p>You have received a new inquiry regarding your solar energy services. Here are the details:</p>
 
     <ul>
       <li><strong>Name:</strong> ${name}</li>
@@ -46,7 +46,7 @@ export async function POST(req: NextRequest) {
 
     <p>Please respond to this inquiry as soon as possible.</p>
 
-    <p>Sincerely,<br>The Automated Inquiry System</p>
+    <p>Sincerely,<br>The I-Sun Synergy Automated System</p>
   `,
     });
 
