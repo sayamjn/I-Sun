@@ -7,35 +7,20 @@ import Image from 'next/image';
 
 const HeaderOnSlider = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
-  // const [liveUrl, setLiveUrl] = useState("");
   const [isMenuOpen, setIsMenuOpen] = useState(false); 
   const router = useRouter(); 
   const pathname = usePathname();
-  useEffect(() => {
-    // const fetchLiveUrl = async () => {
-    //   try {
-    //     const { data, error } = await supabase
-    //       .from("live_url")
-    //       .select("url")
-    //       .eq("id", 1) 
-    //       .single();
   
-    //     if (error) throw error;
-    //     setLiveUrl(data?.url || "");
-    //   } catch (error) {
-    //     console.error("Error fetching live URL:", error);
-    //   }
-    // };
+  useEffect(() => {
     const hasPopupBeenShown = localStorage.getItem('popupShown');
     if (!hasPopupBeenShown) {
       setIsPopupOpen(true);
       localStorage.setItem('popupShown', 'true');
     }
-    // fetchLiveUrl();
   }, []);
   
   const handleLive = () => {
-    router.push('/services/watch-live'); 
+    router.push('/services/virtual-power-plant'); 
   };
   
   const handleLogoClick = () => {
@@ -95,7 +80,7 @@ const HeaderOnSlider = () => {
         >
           <Image
             src="/images/logo_header.webp"
-            alt="Logo"
+            alt="I-Sun Synergy"
             fill
             priority
             className="w-full h-full object-contain object-center"
@@ -113,15 +98,15 @@ const HeaderOnSlider = () => {
           </li>
           <li>
             <button
-              onClick={() => handleNavigation('wedding')}
+              onClick={() => handleNavigation('services')}
               className="text-white hover:text-yellow-400 cursor-pointer block w-full text-left px-4 py-2 md:px-0 md:py-0 md:text-center"
             >
-              WEDDINGS
+              PLATFORM
             </button>
           </li>
           <li>
             <button
-              onClick={() => handleNavigation('services')}
+              onClick={() => handleNavigation('additional-services')}
               className="text-white hover:text-yellow-400 cursor-pointer block w-full text-left px-4 py-2 md:px-0 md:py-0 md:text-center"
             >
               SERVICES
@@ -150,13 +135,13 @@ const HeaderOnSlider = () => {
             onClick={handleLive} 
             className="bg-yellow-500 text-black px-4 py-1.5 rounded-lg font-semibold hover:bg-yellow-400 transition duration-300 whitespace-nowrap"
           >
-            Watch Live
+            Virtual Demo
           </button>
           <button
-            onClick={openPopup} // Open the popup on click
+            onClick={openPopup}
             className="bg-yellow-500 text-black px-4 py-1.5 rounded-lg font-semibold hover:bg-yellow-400 transition duration-300 whitespace-nowrap"
           >
-            ENQUIRY
+            GET QUOTE
           </button>
         </div>
       </nav>

@@ -5,53 +5,53 @@ import AdditionalServiceCard from './AdditionalServiceCard';
 import Link from 'next/link';
 
 export const AdditionalServices = () => {
-
   const services = [
     {
-      title: 'Corporate Event Photography',
+      title: 'Carbon Credits Marketplace',
       imageUrl: '/images/Corporate Event Photography.webp', 
     },
     {
-      title: 'Family Portrait Sessions',
+      title: 'Virtual Power Plant Participation',
       imageUrl: '/images/Family Portrait Sessions.webp',
     },
     {
-      title: 'Maternity Photography',
+      title: 'Solar Education Programs',
       imageUrl: '/images/Maternity Photography.webp', 
     },
     {
-      title: 'Newborn Photography',
+      title: 'Commercial Solar Consulting',
       imageUrl: '/images/Newborn Photography.webp', 
     },
     {
-      title: 'Fashion Portfolio Photography',
+      title: 'Solar-Ready Construction Advisory',
       imageUrl: '/images/Fashion and Portfolio Photography.webp',
     },
     {
-      title: 'Product Photography',
+      title: 'Rural Electrification Projects',
       imageUrl: '/images/Product Photography.webp', 
     },
     {
-      title: 'Real Estate Photography',
+      title: 'Energy Storage Solutions',
       imageUrl: '/images/Real Estate Photography.webp', 
     },
     {
-      title: 'School Event Photography',
+      title: 'Green Building Certification Support',
       imageUrl: '/images/School Event Photography.webp', 
     },
     {
-      title: 'Food Photography',
+      title: 'Industrial Solar Solutions',
       imageUrl: '/images/Food Photography.webp', 
     },
     {
-      title: 'Social Media Content Photography',
+      title: 'Community Solar Programs',
       imageUrl: '/images/Social Media Content Photography.webp',
     },
     {
-      title: 'Professional Equipment Highlight',
+      title: 'Technology Platform',
       imageUrl: '/images/professional-euipments.webp', 
     },
   ];
+
   const titleToSlug = (title:string) => {
     return title
       .trim()
@@ -63,11 +63,10 @@ export const AdditionalServices = () => {
   return (
     <section className="py-8 bg-black">
       <div className="container mx-auto px-4 text-[#E2A240]">
-      <h2 className="text-4xl font-bold text-center mb-16">Additional Services</h2>
+      <h2 className="text-4xl font-bold text-center mb-16">Additional Professional Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {services.map((service, index) => {
             const slug = titleToSlug(service.title);
-            // console.log(slug)
             return (
               <motion.div
                 key={index}
@@ -82,8 +81,7 @@ export const AdditionalServices = () => {
                     imageUrl={service.imageUrl}
                   />
                 </Link>
-
-            </motion.div>
+              </motion.div>
             );
           })}
         </div>

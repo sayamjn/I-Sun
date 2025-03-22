@@ -17,11 +17,11 @@ const ContactPopup: React.FC<ContactPopupProps> = ({ onClose }) => {
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
 
   const services = [
-    'Pre-Wedding',
-    'Wedding',
-    'Post-Wedding',
-    'Baptism',
-    'Funeral Service Coverage',
+    'Solar Assessment',
+    'SolarConnect Platform',
+    'Project Management',
+    'Financing',
+    'Monitoring System',
   ];
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -61,8 +61,6 @@ const ContactPopup: React.FC<ContactPopupProps> = ({ onClose }) => {
         body: JSON.stringify(formData),
       });
 
-      // console.log("API Response:", response); 
-
       if (!response.ok) {
         throw new Error("Failed to send message");
       }
@@ -77,6 +75,7 @@ const ContactPopup: React.FC<ContactPopupProps> = ({ onClose }) => {
         message: "",
       });
       setSelectedServices([]);
+      onClose();
     } catch (error) {
       console.error("Error submitting form:", error);
       alert("Failed to send message. Please try again later.");
@@ -106,7 +105,7 @@ const ContactPopup: React.FC<ContactPopupProps> = ({ onClose }) => {
           </svg>
         </button>
 
-        <h2 className="text-2xl font-bold text-center text-[#E2A240] mb-4">Enquiry</h2>
+        <h2 className="text-2xl font-bold text-center text-[#E2A240] mb-4">Get a Solar Quote</h2>
         <form onSubmit={handleSubmit} className="space-y-3">
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-700">
@@ -168,7 +167,7 @@ const ContactPopup: React.FC<ContactPopupProps> = ({ onClose }) => {
 
           <div>
             <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-              Message <span className="text-red-500">*</span>
+              Interested in <span className="text-red-500">*</span>
             </label>
             <div className="mt-1">
               <div className="flex flex-wrap gap-2 mb-2">
@@ -206,7 +205,7 @@ const ContactPopup: React.FC<ContactPopupProps> = ({ onClose }) => {
               type="submit"
               className="w-full px-4 py-2 bg-[#E2A240] text-white font-semibold rounded-md hover:bg-[#D18F36] transition-colors duration-300"
             >
-              Send Message
+              Get Solar Quote
             </button>
           </div>
         </form>

@@ -1,6 +1,6 @@
-'use client'; // Add this line to make the component client-side
-import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
-import { Link as ScrollLink } from 'react-scroll'; // Import ScrollLink
+'use client'; 
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { Link as ScrollLink } from 'react-scroll'; 
 import { supabase } from '@/lib/supabase';
 
 export default function Footer() {
@@ -55,19 +55,19 @@ export default function Footer() {
                 </li>
                 <li>
                   <ScrollLink
-                    to="wedding"
+                    to="services"
                     smooth={true}
                     duration={500}
                     className="hover:text-[#E2A240] transition-colors duration-300 cursor-pointer text-sm md:text-base"
                   >
-                    Weddings
+                    Solar Platform
                   </ScrollLink>
                 </li>
               </ul>
               <ul className="space-y-2">
                 <li>
                   <ScrollLink
-                    to="services"
+                    to="additional-services"
                     smooth={true}
                     duration={500}
                     className="hover:text-[#E2A240] transition-colors duration-300 cursor-pointer text-sm md:text-base"
@@ -104,22 +104,28 @@ export default function Footer() {
             </h3>
             <div className="flex space-x-4">
               <a
-                href="https://www.facebook.com/share/12B5YUngnvC/"
+                href="#"
                 className="text-white hover:text-[#E2A240] transition-colors duration-300"
               >
                 <FaFacebook size={20} />
               </a>
               <a
-                href="https://www.instagram.com/shivcreationteam03?igsh=a3VzMGZ1dG83ejdt"
+                href="#"
                 className="text-white hover:text-[#E2A240] transition-colors duration-300"
               >
                 <FaInstagram size={20} />
               </a>
               <a
-                href="https://youtube.com/@shivcreation9556?si=chvQmH4WKN-vLF05"
+                href="#"
                 className="text-white hover:text-[#E2A240] transition-colors duration-300"
               >
-                <FaYoutube size={20} />
+                <FaLinkedin size={20} />
+              </a>
+              <a
+                href="#"
+                className="text-white hover:text-[#E2A240] transition-colors duration-300"
+              >
+                <FaTwitter size={20} />
               </a>
             </div>
           </div>
@@ -130,13 +136,13 @@ export default function Footer() {
               Contact Info
             </h3>
             <p className="mb-2 text-sm md:text-base">
-              Email: shivcreationteam@gmail.com
+              Email: contact@isunsynergy.com
             </p>
             <p className="mb-2 text-sm md:text-base">
               Phone: +91 8871201243, +91 7987613175
             </p>
             <p className="mb-2 text-sm md:text-base">
-              Address: H No 138 Nainagiri Ayodhya Bypass Bhopal
+              Address: Bhopal, Madhya Pradesh, India
             </p>
           </div>
         </div>
@@ -144,7 +150,7 @@ export default function Footer() {
         {/* Copyright Text */}
         <div className="mt-8 border-t border-gray-700 pt-6 text-center">
           <p className="text-sm md:text-base">
-            © 2023 Pankaj Photography. All rights reserved.
+            © 2025 I-Sun Synergy. All rights reserved.
           </p>
         </div>
       </div>

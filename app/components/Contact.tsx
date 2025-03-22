@@ -13,11 +13,11 @@ const Contact = () => {
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
 
   const services = [
-    'Pre-Wedding',
-    'Wedding',
-    'Post-Wedding',
-    'Baptism',
-    'Funeral Service Coverage',
+    'Solar Assessment',
+    'SolarConnect Marketplace',
+    'Project Management',
+    'Financing Solutions',
+    'Performance Monitoring'
   ];
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -90,7 +90,7 @@ const Contact = () => {
         <form onSubmit={handleSubmit} className="space-y-6 text-black">
           <div>
             <label htmlFor="name" className="block text-lg font-medium text-gray-700">
-              Name <span className="text-red-500">*</span> {/* Asterisk */}
+              Name <span className="text-red-500">*</span>
             </label>
             <input
               type="text"
